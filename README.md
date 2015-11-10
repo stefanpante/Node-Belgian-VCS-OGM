@@ -12,7 +12,7 @@ npm install belgian-vcs-ogm
 ## Usage
 
 ```
-var ogm = require('ogm');
+var ogm = require('belgian-vcs-ogm');
 ```
 
 ## Available Methods
