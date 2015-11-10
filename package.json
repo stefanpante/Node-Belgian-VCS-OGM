@@ -1,6 +1,6 @@
 {
   "name": "belgian-vsc-ogm",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "description": "OGM, 'overschrijving met gestructureerde mededeling', is a structured message often added to belgian bank transfers to enable automatic processing. This package enables the generation and validation of these structured messages",
   "author": "Stefan Pante",
