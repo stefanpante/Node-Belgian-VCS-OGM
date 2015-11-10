@@ -6,7 +6,7 @@ This Node package enables the generation and validation of these structured mess
 ## Installation
 
 ```
-npm install <name-in-npm>
+npm install belgian-vcs-ogm
 ```
 
 ## Usage
@@ -46,6 +46,7 @@ ogm.isValidOGM('+++70/0800/10029+++');
 <br>
 <hr>
 <br>
+
 ```
 generateOGM(numbers)
 ```
