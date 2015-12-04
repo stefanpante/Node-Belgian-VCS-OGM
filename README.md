@@ -123,3 +123,27 @@ Generates a random structured message.
 var structuredMessage = ogm.generateRandomOGM();
 // output is a valid structuredMessage.
 ```
+
+
+```
+getStrippedOGM(ogm)
+```
+
+strips +'s and /'s from the ogm. returns only the digits.
+
+#### Parameters
+1. **ogm** *(String)*: ogm to strip.
+
+#### Return
+*String*: Stripped ogm
+
+#### Example
+
+```
+var stripped = ogm.getStrippedOGM('+++000/8000/90655+++');
+// stripped === '000800090655'
+```
+
+<br>
+<hr>
+<br>
