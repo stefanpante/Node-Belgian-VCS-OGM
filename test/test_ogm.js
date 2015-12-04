@@ -140,13 +140,25 @@ describe('test OGM functionality', function() {
   });
 
   describe('#generateRandomOGM()', function() {
-    it('should be able to generate a valid Random ogm', function() {
+    it('should be able to generate a valid Random ogm', function () {
 
       for (var i = 0; i < 20; i++) {
         var og = ogm.generateRandomOGM();
         var isValid = ogm.isValidOGM(og);
         assert(isValid);
       }
-    })
+    });
+  });
+
+  describe('#getStrippedOGM(ogm)', function () {
+    it('+++000/8000/90655+++ should generate 000800090655', function () {
+      var stripped = ogm.getStrippedOGM('+++000/8000/90655+++');
+      assert(stripped === '000800090655');
+    });
+    
+    it('+++700/8000/93329+++  should generate 700800093329 ', function () {
+      var stripped = ogm.getStrippedOGM('+++700/8000/93329+++ ');
+      assert(stripped === '700800093329');
+    });
   });
 });

@@ -90,11 +90,20 @@ function generateRandomOGM(){
 	return generateOGM(numbers);
 }
 
+/**
+ * Returns a stripped version of the OGM. Removes the + and /'s.
+ * only digits remain.
+ */
+function getStrippedOGM(ogm) {
+  return ogm.match(/\d+/g).join('');
+}
+
 
 
 module.exports = {
 	isValidOGM: isValidOGM,
 	generateOGM: generateOGM,
 	calculateCheckDigits: calculateCheckDigits,
-	generateRandomOGM: generateRandomOGM
+  generateRandomOGM: generateRandomOGM,
+  getStrippedOGM: getStrippedOGM
 }
